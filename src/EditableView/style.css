@@ -1,0 +1,63 @@
+.todo {
+text-align: center;
+}
+.todoItem {
+    height: 150px;
+    min-height: 100px;
+    box-sizing: border-box;
+    box-shadow: 0.3em 0.4em 0.9em 0.01em #dedede, -0.3em 0.9em 0.9em 0.01em #dedede;
+    width: 250px;
+    border-radius: 10px;
+    margin:15px;
+    display: flex;
+
+}
+.inp textarea{
+
+    opacity: 0;
+    height: 118px;
+    width: 143px;
+    z-index: 0;
+}
+.inp textarea:focus {
+    opacity: 1;
+    z-index: 2;
+
+}
+inp::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+.todoItem:hover {
+    transition:0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateY(-30px) translateX(10px);
+}
+.todo-text-container {
+    margin:1em;
+    display: flex;
+}
+.show-input {
+    position: absolute;
+    height: 118px;
+    width: 142px;
+    overflow: hidden;
+    text-align: left;
+}
+.todo-text-container span {
+    position: relative;
+    justify-self: start;
+    align-self: flex-end;
+    bottom:0.05em;
+    color: darkgray;
+    font-style: italic;
+    font-size: large;
+}
+.delete-icon {
+    align-self: center;
+    font-size: 32px;
+    margin:5px;
+}
+.delete-icon:hover{
+    transition: 0.25s;
+    color:rgba(243, 32, 19,0.5);
+}
